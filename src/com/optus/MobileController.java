@@ -21,7 +21,7 @@ public class MobileController extends AbstractController {
     public ModelAndView handleRenderRequestInternal(RenderRequest request, RenderResponse response){
 
         Set mobiles = mobileService.getAllMobiles();
-        ModelAndView mv = new ModelAndView("viewMobiles", "mobile", mobiles);
+        ModelAndView mv = new ModelAndView("viewMobiles", "mobiles", mobiles);
         return mv;
     }
 
