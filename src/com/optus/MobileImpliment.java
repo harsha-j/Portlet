@@ -6,8 +6,9 @@ import java.util.Set;
 public class MobileImpliment implements MobileService {
 	
 	private static Set allMobiles = new LinkedHashSet();
+	 
 	
-	 public Set getAllMobiles(){
+	public Set getAllMobiles(){
 		 
 		 
 		    allMobiles.add(new Mobile("Samsung Prime", 12000));
@@ -17,11 +18,8 @@ public class MobileImpliment implements MobileService {
 	        
 	 }
 
-	@Override
-	public Set getAllMoblies() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+	
 
 	
 }

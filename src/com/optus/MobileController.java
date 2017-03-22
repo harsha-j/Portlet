@@ -13,14 +13,14 @@ public class MobileController extends AbstractController {
 	
 	private MobileService mobileService;
 
-    public void setMobileService(MobileService movieService) {
+    public void setMobileService(MobileService mobileService) {
         this.mobileService = mobileService;
     }
 
     @Override
     public ModelAndView handleRenderRequestInternal(RenderRequest request, RenderResponse response){
 
-        Set mobiles = mobileService.getAllMoblies();
+        Set mobiles = mobileService.getAllMobiles();
         ModelAndView mv = new ModelAndView("viewMobiles", "mobile", mobiles);
         return mv;
     }
